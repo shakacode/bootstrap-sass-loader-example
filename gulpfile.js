@@ -126,13 +126,6 @@
     return $.serve('dist')();
   });
 
-  // ### task deploy
-  // Deploy to Github pages. *UNTESTED*
-  gulp.task("deploy", ['build'], function () {
-    return gulp.src("dist/**/*")
-      .pipe($.ghPages('git@github.com:justin808/bootstrap-sass-webpack-example.git'));
-  });
-
   // ### task test
   // Run tests in [Karma](http://karma-runner.github.io/) using [FantomJS](http://phantomjs.org/).
   gulp.task("test", function (done) {

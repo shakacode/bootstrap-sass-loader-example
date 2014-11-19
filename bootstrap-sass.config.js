@@ -1,6 +1,3 @@
-'use strict';
-// ## bootstrap-sass-webpack Configuration
-
 module.exports = {
   bootstrapCustomizations: "./_bootstrap-customizations.scss",
   mainSass: "./_main.scss",
