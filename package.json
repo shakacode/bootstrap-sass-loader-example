@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "bootstrap-sass-loader": "justin808/bootstrap-sass-loader",
+    "bootstrap-sass-loader": "~0.0.2",
+    "bootstrap-sass": "~3.3.1",
     "chai": "^1.9.2",
     "code-part": "^1.0.3",
     "css-loader": "^0.9.0",
@@ -32,6 +33,7 @@
     "marked": "^0.3.2",
     "mocha": "^2.0.1",
     "opn": "^1.0.0",
+    "sass-loader": "~0.3.1",
     "style-loader": "^0.8.2",
     "url-loader": "^0.5.5",
     "webpack": "^1.4.13",
