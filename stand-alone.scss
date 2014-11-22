@@ -1,0 +1,16 @@
+// This example file is made to be stand-alone from the bootstrap sass variables
+
+// ToDo: Why doesn't this work if the scss loader has the correct directory configured?
+//@import "bootstrap/variables";
+
+// BIG WARNING
+// The next line just loads variables. It does not actually customize bootstrap with these!
+// If you want to customize bootstrap, be sure to specify a config file.
+// See bootstrap-sass.config.js or bootstrap-sass.extract-text-plugin.config.js
+@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "./bootstrap-customizations";
+
+// If you wanted to load the bootstrap files to customize here, that would work.
+// Otherwise if you have not specified a config file for the boostrap-sass-loader, then there's no customizations
+
+@import "./_main.scss";
