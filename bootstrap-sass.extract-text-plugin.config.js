@@ -1,6 +1,8 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
+  verbose: false, // Set to true to show diagnostic information
+
   bootstrapCustomizations: "./_bootstrap-customizations.scss",
   mainSass: "./_main.scss",
 
