@@ -7,7 +7,7 @@ module.exports = {
   mainSass: "./_main.scss",
 
   // Default for the style loading is to put in your js files
-  // styleLoader: "style-loader!css-loader!sass-loader";
+  // styleLoader: "style-loader!css-loader!sass-loader",
   // If you want to use the ExtractTextPlugin
   //   and you want compressed
   //     styleLoader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader"),
