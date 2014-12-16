@@ -1,7 +1,7 @@
 module.exports = {
   bootstrapCustomizations: "./_bootstrap-customizations.scss",
   mainSass: "./_main.scss",
-
+  verbose: true,
   // Default for the style loading is to put in your js files
   // styleLoader: "style-loader!css-loader!sass-loader";
 
