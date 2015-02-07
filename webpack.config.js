@@ -17,14 +17,21 @@ module.exports = {
   // karma-webpack will specify the output path when testing. This
   // setting is used for building.
   entry: [
-    //Alternative for including everything with no customization
+    // NOTE
+    // Uncomment these examples to see the options
+
+    // This loads only the no-config version of bootstrap
+    //'bootstrap-sass-loader'
+
+    // Alternative for including everything in stand-alone.scss after bootstrap with no access to bootstrap variables.
+    // It's better to put this in the customization files referenced in bootstrap-sass.config.js
     //'bootstrap-sass-loader', './stand-alone.scss'
 
     // Example of using customization file
-    //  'bootstrap-sass!./bootstrap-sass.config.js'
+    'bootstrap-sass!./bootstrap-sass.config.js'
 
     //Example of using customization file with ExtractTextPlugin
-    'bootstrap-sass!./bootstrap-sass.extract-text-plugin.config.js'  // using customization file
+    //'bootstrap-sass!./bootstrap-sass.extract-text-plugin.config.js'  // using customization file
   ],
   output: {
     path: path.join(__dirname, './dist'),
@@ -45,6 +52,7 @@ module.exports = {
       // Needed for the css-loader when [bootstrap-sass-loader](https://github.com/justin808/bootstrap-sass-loader)
       // loads bootstrap's css.
       { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: "url?limit=10000&minetype=application/font-woff" },
+      { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,  loader: "url?limit=10000&minetype=application/font-woff" },
       { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&minetype=application/octet-stream" },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: "file" },
       { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&minetype=image/svg+xml" }
