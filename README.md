@@ -13,3 +13,4 @@ Key files to configure:
 
 This example is based on this example for bootstrap, less version: [bootstrap-webpack-example](http://bline.github.io/bootstrap-webpack-example/).
 
+See `gulpfile.js` for more information on gulp tasks to run, such as `gulp test`, `gulp webpack`, and `gulp build`.
