@@ -25,7 +25,15 @@ Testing Changes in the Bootstrap Sass Loader
 4. Make some changes in the loader, put in some print statements maybe, then run `gulp webpack` to invoke the loader.
 5. Then run `gulp build` and open the resulting file dist/index.html in the browser.
 
-
+Referencing the github version of bootstrap-sass-loader
+=======================================================
+Substitute this line in your `package.json`:
+ 
+    "bootstrap-sass-loader": "justin808/bootstrap-sass-loader#fix-order-defaults-sass-import",
+ 
+ 
+ 
+ 
 Pull requests are welcome!
 
 For more info see: http://www.railsonmaui.com and http://forum.railsonmaui.com.
