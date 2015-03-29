@@ -9,6 +9,7 @@ module.exports = {
 
   mainSass: "./_main.scss",
   verbose: true,
+  debug: false,
   // Default for the style loading is to put in your js files
   // styleLoader: "style-loader!css-loader!sass-loader";
 

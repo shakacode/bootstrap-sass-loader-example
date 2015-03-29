@@ -17,21 +17,22 @@ module.exports = {
   // karma-webpack will specify the output path when testing. This
   // setting is used for building.
   entry: [
-    // NOTE
-    // Uncomment these examples to see the options
+    // Example of using customization file
+    'bootstrap-sass!./bootstrap-sass.config.js'
 
-    // This loads only the no-config version of bootstrap
+    // NOTE
+    // Uncomment these examples to see alternative
+
+    // Uncomment this loads only the no-config version of bootstrap
+    // NOTE: this won't build the CSS file, as you have to configure the extract text plugin.
     //'bootstrap-sass-loader'
+
+    //Example of using customization file with ExtractTextPlugin
+    //'bootstrap-sass!./bootstrap-sass.extract-text-plugin.config.js'  // using customization file
 
     // Alternative for including everything in stand-alone.scss after bootstrap with no access to bootstrap variables.
     // It's better to put this in the customization files referenced in bootstrap-sass.config.js
     //'bootstrap-sass-loader', './stand-alone.scss'
-
-    // Example of using customization file
-    'bootstrap-sass!./bootstrap-sass.config.js'
-
-    //Example of using customization file with ExtractTextPlugin
-    //'bootstrap-sass!./bootstrap-sass.extract-text-plugin.config.js'  // using customization file
   ],
   output: {
     path: path.join(__dirname, './dist'),

@@ -3,6 +3,8 @@ bootstrap-sass-loader-example
 
 Example of configuring webpack with bootstrap-sass using [bootstrap-sass-loader](https://github.com/justin808/bootstrap-sass-loader).
 
+Run `gulp build && open dist/index.html` and then see the resulting test file.
+
 Key files to configure:
 
 1. [bootstrap-sass.config.js](https://github.com/justin808/bootstrap-sass-loader-example/blob/master/bootstrap-sass.config.js)
@@ -23,7 +25,7 @@ Testing Changes in the Bootstrap Sass Loader
 2. Clone both this project and https://github.com/justin808/bootstrap-sass-loader
 3. Use the npm link command per step #1 (see article)
 4. Make some changes in the loader, put in some print statements maybe, then run `gulp webpack` to invoke the loader.
-5. Then run `gulp build` and open the resulting file dist/index.html in the browser.
+5. Then run `gulp build && open dist/index.html` and  the resulting file dist/index.html in the browser.
 
 Referencing the github version of bootstrap-sass-loader
 =======================================================
