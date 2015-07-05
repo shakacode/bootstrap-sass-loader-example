@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-    "bootstrap-sass-loader": "^1.0.4",
+    "bootstrap-sass-loader": "^1.0.5",
     "chai": "^3.0.0",
     "code-part": "^1.1.1",
     "css-loader": "^0.14.5",
