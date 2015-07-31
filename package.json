@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "example usage of bootstrap-webpack",
   "main": "index.js",
+  "engines": {
+    "node": "0.12.7"
+  },
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "bootstrap-sass-loader": "^1.0.8",
