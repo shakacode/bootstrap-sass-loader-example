@@ -1,0 +1,18 @@
+#app {
+  display: block;
+  position: relative;
+  width: 100%;
+
+  .col-items {
+    margin: 70px 0;
+    .col-item {
+      font-size: 50px;
+      text-align: center;
+
+      .text {
+        display: block;
+        font-size: 30px;
+      }
+    }
+  }
+}
