@@ -1,4 +1,8 @@
 // Customize Bootstrap variables that get imported before the original Bootstrap variables.
 // Thus original Bootstrap variables can depend on values from here.
 
-$brand-primary: purple;
+$brand-primary: #5cb85c;
+
+$btn-primary-bg: #29d;
+$btn-primary-color: #fff;
+$btn-primary-border: $btn-primary-bg;

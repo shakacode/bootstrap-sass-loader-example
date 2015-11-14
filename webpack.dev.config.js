@@ -6,7 +6,7 @@ module.exports = {
 
   entry: [
     'webpack-hot-middleware/client',
-    'bootstrap!./app/components/app',
+    'bootstrap!./app/scripts/app',
   ],
 
   output: {
@@ -29,6 +29,8 @@ module.exports = {
       { test: /\.css$/, loaders: [ 'style', 'css', 'postcss' ] },
       { test: /\.scss$/, loaders: [ 'style', 'css', 'postcss', 'sass' ] },
       { test: /\.(woff2?|ttf|eot|svg)$/, loader: 'url?limit=10000' },
+
+      // Use one of these to serve jQuery for Bootstrap scripts:
 
       // Bootstrap 4
       { test: /bootstrap\/dist\/js\/umd\//, loader: 'imports?jQuery=jquery' },

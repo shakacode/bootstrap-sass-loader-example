@@ -4,7 +4,9 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
 
-  entry: 'bootstrap?extractStyles!./app/components/app',
+  // For production build we want to extract CSS to stand-alone file
+  // Provide `extractStyles` param and `bootstrap-loader` will handle it
+  entry: 'bootstrap?extractStyles!./app/scripts/app',
 
   output: {
     path: path.join(__dirname, 'public', 'assets'),
@@ -22,6 +24,8 @@ module.exports = {
       { test: /\.css$/, loaders: [ 'style', 'css', 'postcss' ] },
       { test: /\.scss$/, loaders: [ 'style', 'css', 'postcss', 'sass' ] },
       { test: /\.(woff2?|ttf|eot|svg)$/, loader: 'url?limit=10000' },
+
+      // Use one of these to serve jQuery for Bootstrap scripts:
 
       // Bootstrap 4
       { test: /bootstrap\/dist\/js\/umd\//, loader: 'imports?jQuery=jquery' },

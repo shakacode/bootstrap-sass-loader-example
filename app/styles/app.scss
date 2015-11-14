@@ -7,11 +7,13 @@
     margin: 70px 0;
     .col-item {
       font-size: 50px;
+      color: $icons-color;
       text-align: center;
 
       .text {
         display: block;
         font-size: 30px;
+        color: #333;
       }
     }
   }

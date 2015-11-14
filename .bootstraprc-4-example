@@ -26,8 +26,17 @@ extractStyles: false
 #   production:
 #     extractStyles: true
 
-# preBootstrapCustomizations: ./app/bootstrap/pre-customizations.scss
-bootstrapCustomizations: ./app/bootstrap/customizations.scss
+# Customize Bootstrap variables that get imported before the original Bootstrap variables.
+# Thus original Bootstrap variables can depend on values from here.
+preBootstrapCustomizations: ./app/styles/bootstrap/pre-customizations.scss
+
+# This gets loaded after bootstrap/variables is loaded
+# So you can refer to bootstrap variables
+bootstrapCustomizations: ./app/styles/bootstrap/customizations.scss
+
+# Import your custom styles here
+# Usually this endpoint-file contains list of @imports of your application styles
+appStyles: ./app/styles/app.scss
 
 ### Bootstrap styles
 styles:
