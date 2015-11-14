@@ -21,8 +21,8 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /\.css$/, loaders: [ 'style', 'css', 'postcss' ] },
-      { test: /\.scss$/, loaders: [ 'style', 'css', 'postcss', 'sass' ] },
+      { test: /\.css$/, loader: ExtractTextPlugin.extract('style', 'css!postcss') },
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css!postcss!sass') },
       { test: /\.(woff2?|ttf|eot|svg)$/, loader: 'url?limit=10000' },
 
       // Use one of these to serve jQuery for Bootstrap scripts:
