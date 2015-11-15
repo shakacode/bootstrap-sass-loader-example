@@ -1,15 +1,23 @@
 bootstrap-loader-example
 =========================
 
-Use one of `.bootstraprc-X-example` configs to test different versions of Bootstrap. Just c/p its content in `.bootstraprc`.
+Use one of `.bootstraprc-X-example` configs to test different versions of Bootstrap.
 
 ```bash
-# Install deps
+### Install deps
 npm i
 
-# Run dev server with hot reloading
-npm start
+### Run dev server with hot reloading
 
-# Run production server
-npm run prod
+# Bootstrap 3
+npm run bs3:dev
+# Bootstrap 4
+npm run bs4:dev
+
+### Run production server
+
+# Bootstrap 3
+npm run bs3:prod
+# Bootstrap 4
+npm run bs4:prod
 ```
