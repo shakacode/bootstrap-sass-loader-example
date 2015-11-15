@@ -26,10 +26,6 @@
     "bootstrap",
     "webpack"
   ],
-  "author": {
-    "name": "Justin Gordon",
-    "email": "justin.gordon@gmail.com"
-  },
   "authors": [
     "Justin Gordon <justin.gordon@gmail.com> (https://github.com/justin808)",
     "Alex Fedoseev <alex.fedoseev@gmail.com> (https://github.com/alexfedoseev)"
