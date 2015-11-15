@@ -6,7 +6,10 @@ module.exports = {
 
   // For production build we want to extract CSS to stand-alone file
   // Provide `extractStyles` param and `bootstrap-loader` will handle it
-  entry: 'bootstrap?extractStyles!./app/scripts/app',
+  entry: [
+    'bootstrap-loader/extractStyles',
+    './app/scripts/app',
+  ],
 
   output: {
     path: path.join(__dirname, 'public', 'assets'),

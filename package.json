@@ -2,15 +2,21 @@
   "name": "bootstrap-webpack-example",
   "version": "1.0.0",
   "description": "Example usage of bootstrap-loader",
-  "main": "index.js",
+  "main": "server.prod.js",
   "engines": {
-    "node": "0.12.7"
+    "node": "5"
   },
   "scripts": {
     "start": "nodemon --watch app/markup --ext html server.dev.js",
     "clean": "rm -rf public/",
     "build": "npm run clean && webpack --config webpack.prod.config.js",
-    "prod": "npm run build && nodemon --watch app/markup --ext html server.prod.js"
+    "prod": "npm run build && nodemon --watch app/markup --ext html server.prod.js",
+    "bs3": "rm .bootstraprc && cp .bootstraprc-3-example .bootstraprc",
+    "bs4": "rm .bootstraprc && cp .bootstraprc-4-example .bootstraprc",
+    "bs3:dev": "npm run bs3 && npm start",
+    "bs4:dev": "npm run bs4 && npm start",
+    "bs3:prod": "npm run bs3 && npm run prod",
+    "bs4:prod": "npm run bs4 && npm run prod"
   },
   "repository": {
     "type": "git",
@@ -24,6 +30,10 @@
     "name": "Justin Gordon",
     "email": "justin.gordon@gmail.com"
   },
+  "authors": [
+    "Justin Gordon <justin.gordon@gmail.com> (https://github.com/justin808)",
+    "Alex Fedoseev <alex.fedoseev@gmail.com> (https://github.com/alexfedoseev)"
+  ],
   "license": "MIT",
   "dependencies": {
     "bootstrap": "github:twbs/bootstrap#v4.0.0-alpha",
@@ -37,7 +47,7 @@
     "babel-loader": "^6.1.0",
     "babel-preset-es2015": "^6.1.18",
     "body-parser": "^1.14.1",
-    "bootstrap-loader": "0.0.3",
+    "bootstrap-loader": "0.0.4",
     "css-loader": "^0.22.0",
     "eslint": "^1.9.0",
     "eslint-config-airbnb": "^1.0.0",
